@@ -1,0 +1,252 @@
+insert into bill values( 1 , 'inpatiant'  , 2    , 3    , 50   , 100  , 25  , 20   );
+insert into bill values( 2 , 'outpatiant' , 2    , null , null , 10   , 5   , 10   );
+insert into bill values( 3 , 'outpatiant' , 3    , 4    , null , 100  , 50  , 15   );
+insert into bill values( 4 , 'outpatiant' , null , 3    , null , 200  , 25  , 20   );
+insert into bill values( 5 , 'outpatiant' , 2    , 3    , null , 350  , 25  , null );
+select * from bill;
+*****************************************************************************************************************************************************
+insert into department values( 'sergery'   , 0791235  );
+insert into department values( 'emergency' , 0791892  );
+insert into department values( 'bones'     , 07912553 );
+insert into department values( 'child'     , 07912775 );
+insert into department values( 'dental'    , 0791236  );
+select * from department;
+*****************************************************************************************************************************************************
+insert into department_head values( 124 , 'Ahmad' );
+insert into department_head values( 163 , 'Amer'  );
+insert into department_head values( 154 , 'Ammar' );
+insert into department_head values( 145 , 'Ayman' );
+insert into department_head values( 189 , 'Hammd' );
+select * from department_head;
+*****************************************************************************************************************************************************
+insert into active_employee values( 123 , 'Ahmad' , 'Male' , '08-MAR-85' , 500 , '01-APR-10' , '01-APR-10 21:45:17' , 124 );
+insert into active_employee values( 124 , 'Moaad' , 'Male' , '19-JUN-86' , 550 , '20-FEB-05' , '20-FEB-05 22:23:15' , 163 );
+insert into active_employee values( 125 , 'Omer'  , 'Male' , '19-MAR-85' , 500 , '02-NOV-10' , '02-NOV-10 10:20:05' , 154 );
+insert into active_employee values( 126 , 'Ammar' , 'Male' , '14-MAR-95' , 500 , '15-MAY-17' , '15-MAY-17 09:50:55' , 145 );
+insert into active_employee values( 127 , 'Omran' , 'Male' , '09-APR-64' , 500 , '06-AUG-12' , '06-AUG-12 12:20:03' , 189 );
+select * from active_employee;
+*****************************************************************************************************************************************************
+insert into doctor values( 358 , 'Ahmad' , 'Male'   , '14-MAR-65' , 500 , '14-FEB-98' , 'emergency' );
+insert into doctor values( 564 , 'Noor'  , 'Female' , '05-JAN-86' , 600 , '15-MAY-03' , 'sergary'   );
+insert into doctor values( 987 , 'Ahlam' , 'Female' , '05-JUN-80' , 700 , '15-JUN-08' , 'dental'    );
+insert into doctor values( 124 , 'Ali'   , 'Male'   , '16-OCT-66' , 450 , '03-MAR-03' , 'bones'     );
+insert into doctor values( 148 , 'Ammar' , 'Male'   , '14-FEB-64' , 500 , '14-JUN-03' , 'child'     );
+select * from doctor;
+*****************************************************************************************************************************************************
+insert into emergency_contact values( 234 , 'Kalid' , 'Uncle'   , 079855  );
+insert into emergency_contact values( 235 , 'Alaa'  , 'Brother' , 079755  );
+insert into emergency_contact values( 236 , 'Naden' , 'Sister'  , 079665  );
+insert into emergency_contact values( 237 , 'Hala'  , 'Mother'  , 0772584 );
+insert into emergency_contact values( 238 , 'Rayan' , 'Father'  , 0777879 );
+select * from emergency_contact;
+*****************************************************************************************************************************************************
+insert into medicine values( 10 , '5m' , 5 , '3' , 'Cough'       );
+insert into medicine values( 11 , '2m' , 7 , '2' , 'Tonsillitis' );
+insert into medicine values( 12 , '1m' , 2 , '2' , 'Bone pain'   );
+insert into medicine values( 13 , '5m' , 3 , '1' , 'Headache'    );
+insert into medicine values( 14 , '3m' , 8 , '3' , 'Stomachache' );
+select * from medicine;
+*****************************************************************************************************************************************************
+insert into nurse values( 23 , 'Taimm' , 'Femal' , '14-MAR-65' ,350 , '14-FEB-98' , 1 , 'psychological care' );
+insert into nurse values( 24 , 'Dana'  , 'Femal' , '05-JAN-86' ,350 , '15-MAY-03' , 2 , 'Health care'        );
+insert into nurse values( 25 , 'Ola'   , 'Femal' , '05-JUN-80' ,320 , '15-JUN-08' , 3 , 'Maternal health'    );
+insert into nurse values( 26 , 'Naim'  , 'Male'  , '16-OCT-66' ,340 , '03-MAR-03' , 4 , 'Child health'       );
+insert into nurse values( 27 , 'Hasan' , 'Male'  , '14-FEB-64' ,400 , '14-JUN-03' , 5 , 'Cancer care'        );
+select * from nurse;
+*****************************************************************************************************************************************************
+insert into passive_employee values( 1 , 'Ali'   , 'Male'  , '14-MAR-65' , 400 , '14-FEB-98' , '14-JUN-03' , 'sergery'   , 'sergery'   );
+insert into passive_employee values( 2 , 'Moheb' , 'Male'  , '05-JAN-86' , 550 , '15-MAY-03' , '04-MAR-12' , 'dental'    , 'dental'    );
+insert into passive_employee values( 3 , 'Sara'  , 'Femle' , '16-OCT-66' , 590 , '15-JUN-08' , '02-FEB-10' , 'emergency' , 'bones'     );
+insert into passive_employee values( 4 , 'Alaa'  , 'Male'  , '05-JUN-80' , 465 , '03-MAR-03' , '03-JUN-15' , 'bones'     , 'child'     );
+insert into passive_employee values( 5 , 'Alian' , 'Male'  , '14-FEB-64' , 752 , '14-JUN-03' , '04-APR-18' , 'chiled'    , 'emergency' );
+select * from passive_employee;
+*****************************************************************************************************************************************************
+insert into reception values( 079564 , 'Ahamd' );
+insert into reception values( 076452 , 'Ali'   );
+insert into reception values( 079648 , 'Tala'  );
+insert into reception values( 077254 , 'Zena'  );
+insert into reception values( 077245 , 'Abrar' );
+select * from reception;
+*****************************************************************************************************************************************************
+insert into out_patient values( 7  , 'Ahmad' , 0789758 , 'Male'  , '14-MAR-65' , '14-JUN-03' , '14-FEB-98' , 'stomachache' , 'good' , 'o+' , 'Amman' , 'a@g.com' , null , 1 , 079564 );
+insert into out_patient values( 8  , 'Alaa'  , 0789757 , 'Male'  , '05-JAN-86' , '04-MAR-12' , '15-MAY-03' , 'bone pain'   , 'bad'  , 'o-' , 'Irbid' , 'b@g.com' , null , 2 , 076452 );
+insert into out_patient values( 9  , 'Lana'  , 0789755 , 'Femle' , '16-OCT-66' , '02-FEB-10' , '15-JUN-08' , 'cancer'      , 'good' , 'A+' , 'Amman' , 'n@g.com' , null , 3 , 079648 );
+insert into out_patient values( 10 , 'Awad'  , 0789754 , 'Male'  , '05-JUN-80' , '03-JUN-15' , '03-MAR-03' , 'headache'    , 'good' , 'A-' , 'Ajlun' , 'm@g.com' , null , 4 , 077254 );
+insert into out_patient values( 11 , 'Jamal' , 0789751 , 'Male'  , '14-FEB-64' , '04-APR-18' , '14-JUN-03' , 'cough'       , 'bad'  , 'b+' , 'Zarqa' , 'l@g.com' , null , 5 , 077245 );
+select * from out_patient;
+*****************************************************************************************************************************************************
+insert into doctor_out_patients values( 358 , 7  );
+insert into doctor_out_patients values( 564 , 8  );
+insert into doctor_out_patients values( 978 , 9  );
+insert into doctor_out_patients values( 124 , 10 );
+insert into doctor_out_patients values( 148 , 11 );
+select * from doctor_out_patients;
+*****************************************************************************************************************************************************
+insert into medicine_out_patients values( 7  , 10 );
+insert into medicine_out_patients values( 8  , 11 );
+insert into medicine_out_patients values( 9  , 12 );
+insert into medicine_out_patients values( 10 , 13 );
+insert into medicine_out_patients values( 11 , 14 );
+select * from medicine_out_patients;
+*****************************************************************************************************************************************************
+insert into nurse_out_patients values( 23 , 7  );
+insert into nurse_out_patients values( 24 , 8  );
+insert into nurse_out_patients values( 25 , 9  );
+insert into nurse_out_patients values( 26 , 10 );
+insert into nurse_out_patients values( 27 , 11 );
+select * from nurse_out_patients;
+*****************************************************************************************************************************************************
+insert into receptionest values( 12 , 'Ahmad' , 'Male'   , '12-APR-85' , 100 , '04-APR-18' , null ,null , null , null , null , null );
+insert into receptionest values( 14 , 'Mosa'  , 'Male'   , '05-JAN-86' , 300 , '14-JUN-03' , null ,null , null , null , null , null );
+insert into receptionest values( 15 , 'Muna'  , 'Female' , '16-OCT-66' , 400 , '04-MAR-12' , null ,null , null , null , null , null );
+insert into receptionest values( 16 , 'Bana'  , 'Female' , '05-JUN-80' , 550 , '03-JUN-15' , null ,null , null , null , null , null );
+insert into receptionest values( 13 , 'Saad'  , 'Male'   , '14-FEB-64' , 880 , '03-MAR-03' , null ,null , null , null , null , null );
+select * from receptionest;
+*****************************************************************************************************************************************************
+insert into record values( 100 , '14-JAN-17' , 12 );
+insert into record values( 102 , '04-APR-18' , 14 );
+insert into record values( 103 , '04-MAR-12' , 15 );
+insert into record values( 104 , '03-JUN-15' , 16 );
+insert into record values( 105 , '03-MAR-03' , 13 );
+select * from record;
+*****************************************************************************************************************************************************
+insert into room values( 14  , 112 , 'NO'  , 'full'  );
+insert into room values( 15  , 118 , 'NO'  , 'empty' );
+insert into room values( 105 , 200 , 'YES' , 'full'  );
+insert into room values( 107 , 300 , 'NO'  , 'empty' );
+insert into room values( 16  , 100 , 'YES' , 'full'  );
+select * from room;
+*****************************************************************************************************************************************************
+insert into in_patient values( 15 , 'Ali'   , 077541 , 'Male'   , '14-FEB-87' , '12-MAY-17' , '15-OCT-15' , 'cancer' , 'very bad'  , 'A- ' , 'Amman' ,'K@g.com'  , '04-APR-18' , 14  , 100  , 14  , 1 , 079564 );
+insert into in_patient values( 16 , 'Jory'  , 078541 , 'Female' , '14-JAN-94' , '12-JUN-16' , '13-NOV-15' , 'cancer' , 'Good'      , 'O- ' , 'Irbid' ,'J@g.com'  , '14-JUN-18' , 105 , 200  , 15  , 2 , 076452 );
+insert into in_patient values( 17 , 'Ahmad' , 077987 , 'Male'   , '14-MAR-87' , '12-JUL-17' , '15-DEC-15' , 'cancer' , 'Bad'       , 'A- ' , 'Amman' ,'a@g.com'  , '12-JUL-17' , 140 , 100  , 105 , 3 , 079648 );
+insert into in_patient values( 18 , 'Ameer' , 077333 , 'Male'   , '14-OCT-87' , '12-AUG-17' , '15-JAN-15' , 'cancer' , 'Very good' , 'A- ' , 'Amman' ,'b@g.com'  , '12-AUG-17' , 512 , 100  , 107 , 4 , 077254 );
+insert into in_patient values( 19 , 'Malik' , 077847 , 'Male'   , '14-DEC-87' , '12-SEP-17' , '15-FEB-15' , 'cancer' , 'Bad'       , 'A- ' , 'Amman' ,'c@g.com'  , '12-SEP-17' , 112 , 100  , 16  , 5 , 077245 );
+select * from in_patient;
+*****************************************************************************************************************************************************
+insert into doctor_in_patients values( 358 , 15 );
+insert into doctor_in_patients values( 564 , 16 );
+insert into doctor_in_patients values( 987 , 17 );
+insert into doctor_in_patients values( 124 , 18 );
+insert into doctor_in_patients values( 148 , 19 );
+select * from  doctor_in_patients;
+*****************************************************************************************************************************************************
+insert into emergency_contact_in_patients values( 15 , 234 );
+insert into emergency_contact_in_patients values( 16 , 235 );
+insert into emergency_contact_in_patients values( 17 , 236 );
+insert into emergency_contact_in_patients values( 18 , 237 );
+insert into emergency_contact_in_patients values( 19 , 238 );
+select * from emergency_contact_in_patients;
+*****************************************************************************************************************************************************
+insert into in_patient_medicines values( 15 , 10 );
+insert into in_patient_medicines values( 16 , 11 );
+insert into in_patient_medicines values( 17 , 12 );
+insert into in_patient_medicines values( 18 , 13 );
+insert into in_patient_medicines values( 19 , 14 );
+select * from in_patient_medicines ;
+*****************************************************************************************************************************************************
+insert into in_patient_nurses values ( 23 , 15 );
+insert into in_patient_nurses values ( 24 , 16 );
+insert into in_patient_nurses values ( 25 , 17 );
+insert into in_patient_nurses values ( 26 , 18 );
+insert into in_patient_nurses values ( 27 , 19 );
+select * from in_patient_nurses;
+*****************************************************************************************************************************************************
+insert into nurse_rooms values( 23 , 14  );
+insert into nurse_rooms values( 24 , 15  );
+insert into nurse_rooms values( 25 , 105 );
+insert into nurse_rooms values( 26 , 107 );
+insert into nurse_rooms values( 27 , 16  );
+select * from nurse_rooms;
+*****************************************************************************************************************************************************
+insert into service values( 'classification cases room'          , 'Yes' , 'Tumor surgery'      , ' Blood balls test'    , 'Skull'    );
+insert into service values( 'Gypsum installation room '          , 'Yes' , 'Children's surgary' , ' Liver function test' , 'Breakage' );
+insert into service values( 'Cardiopulmonary resuscitation room' , 'Yes' , 'Neurosurgary'       , ' Heart function test' , 'limbs'    );
+insert into service values( 'Child emergency room '              , 'Yes' , 'General surgary'    , ' Fat test'            , 'Chest'    );
+insert into service values( 'Small operating room '              , 'Yes' , 'Heart surgary'      , ' Pressure test'       , 'Shoulder' );
+select * from service;
+*****************************************************************************************************************************************************
+insert into out_patient_services values( 7  , 'classification cases room'          );
+insert into out_patient_services values( 8  , 'Gypsum installation room '          );
+insert into out_patient_services values( 9  , 'Cardiopulmonary resuscitation room' );
+insert into out_patient_services values( 10 , 'Child emergency room '              );
+insert into out_patient_services values( 11 , 'Small operating room '              );
+select * from out_patient_services;
+*****************************************************************************************************************************************************
+insert into test values( 'Blood' , 'Blood balls test'    , 3 );
+insert into test values( 'Blood' , 'Liver function test' , 4 );
+insert into test values( 'Blood' , 'Heart function test' , 5 );
+insert into test values( 'Blood' , 'Fat test'            , 2 );
+insert into test values( 'Blood' , 'Blood balls test'    , 3 );
+select * from test ;
+*****************************************************************************************************************************************************
+insert into doctor_tests values( 358 , 'Blood balls test' );
+insert into doctor_tests values( 564 , 'Blood balls test' );
+insert into doctor_tests values( 987 , 'Blood balls test' );
+insert into doctor_tests values( 124 , 'Blood balls test' );
+insert into doctor_tests values( 148 , 'Blood balls test' );
+select * from doctor_tests;
+*****************************************************************************************************************************************************
+insert into in_patient_tests values( 15 , 'Liver function test' );
+insert into in_patient_tests values( 16 , 'Liver function test' );
+insert into in_patient_tests values( 17 , 'Liver function test' );
+insert into in_patient_tests values( 18 , 'Liver function test' );
+insert into in_patient_tests values( 19 , 'Liver function test' );
+select * from in_patient_tests;
+*****************************************************************************************************************************************************
+insert into out_patient_tests values( 7  , 'Heart function test' );
+insert into out_patient_tests values( 8  , 'Heart function test' );
+insert into out_patient_tests values( 9  , 'Heart function test' );
+insert into out_patient_tests values( 10 , 'Heart function test' );
+insert into out_patient_tests values( 11 , 'Heart function test' );
+select * from out_patient_tests;
+*****************************************************************************************************************************************************
+insert into contact_NO values( 15 , 115 );
+insert into contact_NO values( 16 , 114 );
+insert into contact_NO values( 17 , 119 );
+insert into contact_NO values( 18 , 120 );
+insert into contact_NO values( 19 , 121 );
+select * from contact_NO;
+*****************************************************************************************************************************************************
+insert into roomType values ( 'Aspare room '  , 100 );
+insert into roomType values ( 'Recovery room' , 550 );
+insert into roomType values ( 'Labor room'    , 250 );
+insert into roomType values ( 'icu'           , 600 );
+insert into roomType values ( 'Break room'    , 31  );
+select * from roomType;
+*****************************************************************************************************************************************************
+insert into patientInfo values( 'Name DOB Phonenumber' , 10  );
+insert into patientInfo values( 'Name DOB Phonenumber' , 100 );
+insert into patientInfo values( 'Name DOB Phonenumber' , 43  );
+insert into patientInfo values( 'Name DOB Phonenumber' , 87  );
+insert into patientInfo values( 'Name DOB Phonenumber' , 69  );
+select * from patientInfo;
+*****************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
